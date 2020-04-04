@@ -6,9 +6,10 @@ public class przyklad1 {
 
     public static void main(String[] args) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        User adress = session.find(User.class, 1);
+       // Product adress = session.find(Product.class, 1);
+       // System.out.println(adress.getDescription());
         session.close();
-        System.out.println(adress.toString());
+
     }
 
 }
